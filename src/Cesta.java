@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Cesta  {
     private Producto [] listaProductos;
 
@@ -19,5 +21,12 @@ public class Cesta  {
             importeTotal += producto.getPrecio();
         }
         return importeTotal;
+    }
+
+    @Override
+    public String toString() {
+        return "Cesta{" +
+                "listaProductos=" + Arrays.toString(listaProductos) +
+                '}';
     }
 }

@@ -16,4 +16,11 @@ public class Bebida extends Consumible{
     public void setVolumen(double volumen) {
         this.volumen = volumen;
     }
+
+    @Override
+    public String toString() {
+        return "Bebida{" +
+                "volumen=" + volumen +
+                "} " + super.toString();
+    }
 }

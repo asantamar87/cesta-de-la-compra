@@ -16,4 +16,11 @@ public abstract class Consumible extends Producto {
     public void setFechaCaducidad(LocalDate fechaCaducidad) {
         this.fechaCaducidad = fechaCaducidad;
     }
+
+    @Override
+    public String toString() {
+        return "Consumible{" +
+                "fechaCaducidad=" + fechaCaducidad +
+                "} " + super.toString();
+    }
 }

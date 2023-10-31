@@ -33,20 +33,37 @@ public class Main {
        });
 
         Cliente cliente1 = new Cliente("Pepe", cesta);
-        System.out.println("====================================");
+/*        System.out.println("====================================");
         System.out.println(cliente1.getNombre());
         System.out.println(cliente1.getCesta().calcularImporteTotal());
         System.out.println(cliente1.getCesta().getListaProductos().length);
-        System.out.println(cliente1.getCesta().getListaProductos()[0].getNombre());
+        System.out.println(cliente1.getCesta().getListaProductos()[0].getNombre());*/
 
         Cliente cliente2 = new Cliente("Juan", cesta2);
-
+/*
         System.out.println("====================================");
         System.out.println(cliente2.getNombre());
         System.out.println(cliente2.getCesta().calcularImporteTotal());
         System.out.println(cliente2.getCesta().getListaProductos().length);
         System.out.println(cliente2.getCesta().getListaProductos()[0].getNombre());
 
-        System.out.println(cliente2.getId());
+        System.out.println(cliente2.getId());*/
+    }
+
+    public static void procesarCliente(Cliente cliente){
+        System.out.println("====================================");
+        System.out.println("Cliente " + cliente.getNombre() + "con id " + cliente.getId());
+
+        System.out.println("Contenido de la cesta del cliente : ");
+
+        for (Producto producto : cliente.getCesta().getListaProductos()) {
+            System.out.println("====================================");
+            System.out.println(producto);
+        }
+
+        System.out.println("************************************");
+        System.out.println("Importe total de la cesta : " + cliente.getCesta().calcularImporteTotal());
+        System.out.println("************************************");
+
     }
 }

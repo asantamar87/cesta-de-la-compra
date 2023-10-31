@@ -26,5 +26,13 @@ public class Ropa extends Producto {
     public void setTalla(String talla) {
         this.talla = talla;
     }
+
+    @Override
+    public String toString() {
+        return "Ropa{" +
+                "tipo='" + tipo + '\'' +
+                ", talla='" + talla + '\'' +
+                "} " + super.toString();
+    }
 }
 

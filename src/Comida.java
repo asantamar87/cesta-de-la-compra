@@ -17,4 +17,11 @@ public class Comida extends Consumible{
     public void setPesoNeto(double pesoNeto) {
         this.pesoNeto = pesoNeto;
     }
+
+    @Override
+    public String toString() {
+        return "Comida{" +
+                "pesoNeto=" + pesoNeto +
+                "} " + super.toString();
+    }
 }
