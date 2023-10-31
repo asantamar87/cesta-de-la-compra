@@ -39,6 +39,8 @@ public class Main {
         System.out.println(cliente1.getCesta().getListaProductos().length);
         System.out.println(cliente1.getCesta().getListaProductos()[0].getNombre());*/
 
+        procesarCliente(cliente1);
+
         Cliente cliente2 = new Cliente("Juan", cesta2);
 /*
         System.out.println("====================================");
@@ -48,6 +50,8 @@ public class Main {
         System.out.println(cliente2.getCesta().getListaProductos()[0].getNombre());
 
         System.out.println(cliente2.getId());*/
+
+        procesarCliente(cliente2);
     }
 
     public static void procesarCliente(Cliente cliente){
