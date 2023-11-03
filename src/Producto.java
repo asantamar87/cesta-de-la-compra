@@ -38,7 +38,7 @@ public abstract class Producto {
         return "Producto{" +
                 "nombre='" + nombre + '\'' +
                 ", descripcion='" + descripcion + '\'' +
-                ", precio=" + precio +
+                ", precio=" + precio + "€" +
                 '}';
     }
 }
